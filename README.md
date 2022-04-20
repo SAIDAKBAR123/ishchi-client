@@ -1,4 +1,4 @@
-# ishchi uz
+# Ishbozori uz
 
 ## Project setup
 ```
