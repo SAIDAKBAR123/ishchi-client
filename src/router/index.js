@@ -9,7 +9,19 @@ const routes = [
   {
     path: '/',
     name: 'Dashboard',
-    component: Dashboard
+    component: Dashboard,
+    children: [
+      {
+        path: '/job-feeds',
+        name: 'job-feeds',
+        component: () => import('../views/Dashboard/JobFeeds')
+      },
+      {
+        path: '/recent-searches',
+        name: 'recent-searches',
+        component: () => import('../views/Dashboard/RecentSearches')
+      }
+    ]
   }
   // {
   //   path: '/restaurant',

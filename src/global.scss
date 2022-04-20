@@ -48,25 +48,25 @@ $title-font: 'Noto Sans';
 
  
 
- html::-webkit-scrollbar {
-  width: 12px;
-  height: 10px !important;
-  margin-right: 2px;
-  border-radius: 4px;
-}
+//  html::-webkit-scrollbar {
+//   width: 12px;
+//   height: 10px !important;
+//   margin-right: 2px;
+//   border-radius: 4px;
+// }
 
-html::-webkit-scrollbar-thumb {
-  background: #508DD9;
-  border-radius: 2px;
-}
+// html::-webkit-scrollbar-thumb {
+//   background: #508DD9;
+//   border-radius: 2px;
+// }
 
-html::-webkit-scrollbar-thumb:hover {
-  background: #508DD9;
-}
+// html::-webkit-scrollbar-thumb:hover {
+//   background: #508DD9;
+// }
 
-html::-webit-scrollbar-track {
-  background: rgba(245, 245, 245, 0.88);
-  border-radius: 2px;
-  -webkit-box-shadow: inset 0px 0px 0px rgba(245, 245, 245, 0.88);
-  box-shadow: inset 0px 0px 0px rgba(245, 245, 245, 0.88);
-}
+// html::-webit-scrollbar-track {
+//   background: rgba(245, 245, 245, 0.88);
+//   border-radius: 2px;
+//   -webkit-box-shadow: inset 0px 0px 0px rgba(245, 245, 245, 0.88);
+//   box-shadow: inset 0px 0px 0px rgba(245, 245, 245, 0.88);
+// }

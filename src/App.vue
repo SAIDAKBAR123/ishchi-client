@@ -1,5 +1,6 @@
 <template>
   <v-app id="inspire">
+      <Header />
     <v-main class="grey lighten-3">
       <v-container fluid>
         <router-view />
@@ -10,8 +11,10 @@
 
 <script>
 import './global.scss'
+import Header from './components/Header'
 export default {
   components: {
+    Header
   },
   data: () => ({
     links: [{
@@ -40,7 +43,7 @@ export default {
     isCartActive: false
   }),
   created () {
-    // this.$vuetify.theme = 'dark'
+    this.$router.push('/job-feeds')
   },
   methods: {
     toggleLogin () {
