@@ -1,20 +1,24 @@
 <template>
   <v-app id="inspire">
       <Header />
+      <v-btn @click="openTelegram">Login</v-btn>
     <v-main class="grey lighten-3">
       <v-container fluid>
         <router-view />
       </v-container>
     </v-main>
+    <Footer />
   </v-app>
 </template>
 
 <script>
 import './global.scss'
 import Header from './components/Header'
+import Footer from './components/Footer'
 export default {
   components: {
-    Header
+    Header,
+    Footer
   },
   data: () => ({
     links: [{
@@ -57,6 +61,9 @@ export default {
     },
     closeCart () {
       this.isCartActive = false
+    },
+    openTelegram () {
+      window.open('https://oauth.telegram.org/auth?bot_id=5303773505&origin=https%3A%2F%2Fcore.telegram.org&embed=1&request_access=write', '', 'width=400, height=400')
     }
   }
 }
